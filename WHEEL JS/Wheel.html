@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Wheel.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn">Spin</button>
+        <img src="arrow.jpg" alt="spinner-arrow" />
+      </div>
+      <div id="final-value">
+        <p>Click On The Spin Button To Start</p>
+      </div>
+      <!-- Input for Custom Text -->
+      <div class="input-container">
+        <input type="text" id="custom-text" placeholder="Enter text for the wheel" />
+        <button id="add-text-btn">Add Text</button>
+      </div>
+      <!-- Input for Update and Delete -->
+      <div class="input-container">
+        <input type="number" id="label-index" placeholder="Enter label index" />
+        <button id="update-text-btn">Edit</button>
+        <button id="delete-text-btn">Delete</button>
+      </div>
+    </div>
+    <!-- Library de Chart.js aui permet de faire l9isma du pie(chatira)  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin permet de faire le display des mot en top of the labels -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Sjs cript -->
+    <script src="Wheel.js"></script>
+  </body>
+</html>
